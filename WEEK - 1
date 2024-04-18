@@ -4,21 +4,21 @@ ubuntu terminal commands and changes.....
 >>>>>..........
 >>>>>>>.............
     
-(base) user@nmst-1402:~$ touch file1 file2
-(base) user@nmst-1402:~$ whoami
+(base) user@sravanidharavath:~$ touch file1 file2
+(base) user@sravanidharavath:~$ whoami
 user
-(base) user@nmst-1402:~$ id
+(base) user@sravanidharavath:~$ id
 uid=1000(user) gid=1000(user) groups=1000(user),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),120(lpadmin),132(lxd),133(sambashare)
-(base) user@nmst-1402:~$ groups
+(base) user@sravanidharavath:~$ groups
 user adm cdrom sudo dip plugdev lpadmin lxd sambashare
-(base) user@nmst-1402:~$ passwd
+(base) user@sravanidharavath:~$ passwd
 Changing password for user.
 Current password: 
 passwd: Authentication token manipulation error
 passwd: password unchanged
-(base) user@nmst-1402:~$ who
+(base) user@sravanidharavath:~$ who
 user     :0           2024-03-29 10:54 (:0)
-(base) user@nmst-1402:~$ last
+(base) user@sravanidharavath:~$ last
 user     :0           :0               Fri Mar 29 10:54   still logged in
 reboot   system boot  5.15.0-97-generi Fri Mar 29 10:51   still running
 user     :0           :0               Fri Mar 29 10:32 - down   (00:04)
@@ -38,7 +38,7 @@ user     :0           :0               Tue Oct 24 19:41 - down   (00:04)
 reboot   system boot  5.15.0-87-generi Tue Oct 24 19:41 - 19:45  (00:04)
 
 wtmp begins Tue Oct 24 19:40:08 2023
-(base) user@nmst-1402:~$ nslookup google.com
+(base) user@sravanidharavath:~$ nslookup google.com
 Server:		127.0.0.53
 Address:	127.0.0.53#53
 
@@ -48,7 +48,7 @@ Address: 142.250.183.206
 Name:	google.com
 Address: 2404:6800:4009:832::200e
 
-(base) user@nmst-1402:~$ nslookup rgukt.ac.in
+(base) user@sravanidharavath:~$ nslookup rgukt.ac.in
 Server:		127.0.0.53
 Address:	127.0.0.53#53
 
@@ -70,69 +70,69 @@ Address: 2001:4860:4802:32::15
 Name:	rgukt.ac.in
 Address: 2001:4860:4802:34::15
 
-(base) user@nmst-1402:~$ cp
+(base) user@sravanidharavath:~$ cp
 cp: missing file operand
 Try 'cp --help' for more information.
-(base) user@nmst-1402:~$ cp file1 file2
-(base) user@nmst-1402:~$ cat>file1
-tharun is a good boy
+(base) user@sravanidharavath:~$ cp file1 file2
+(base) user@sravanidharavath:~$ cat>file1
+sravani is a good girl
 rgukt student
-(base) user@nmst-1402:~$ cat> file2
-balaji is a good boy
-rgukt student
-cse hacker
-(base) user@nmst-1402:~$ cat file1
-tharun is a good boy
-rgukt student
-(base) user@nmst-1402:~$ cat file2
-balaji is a good boy
+(base) user@sravanidharavath:~$ cat> file2
+pooja is a good girl
 rgukt student
 cse hacker
-(base) user@nmst-1402:~$ cat file1 file2
-tharun is a good boy
+(base) user@sravanidharavath:~$ cat file1
+sravani is a good girl
 rgukt student
-balaji is a good boy
+(base) user@sravanidharavath:~$ cat file2
+pooja is a good girl
 rgukt student
 cse hacker
-(base) user@nmst-1402:~$ cp file1 file2
-(base) user@nmst-1402:~$ cat file1
-tharun is a good boy
+(base) user@sravanidharavath:~$ cat file1 file2
+sravani is a good girl
 rgukt student
-(base) user@nmst-1402:~$ cp  file2
+pooja is a good girl
+rgukt student
+cse hacker
+(base) user@sravanidharavath:~$ cp file1 file2
+(base) user@sravanidharavath:~$ cat file1
+sravani is a good girl
+rgukt student
+(base) user@sravanidharavath:~$ cp  file2
 cp: missing destination file operand after 'file2'
 Try 'cp --help' for more information.
-(base) user@nmst-1402:~$ cat  file2
-tharun is a good boy
+(base) user@sravanidharavath:~$ cat  file2
+sravani is a good girl
 rgukt student
-(base) user@nmst-1402:~$ cat  file1
-tharun is a good boy
+(base) user@sravanidharavath:~$ cat  file1
+sravani is a good girl
 rgukt student
-(base) user@nmst-1402:~$ rm file2
-(base) user@nmst-1402:~$ cat file2
+(base) user@sravanidharavath:~$ rm file2
+(base) user@sravanidharavath:~$ cat file2
 cat: file2: No such file or directory
-(base) user@nmst-1402:~$ cat> file2
-balaji is a good boy
+(base) usersravanidharavath:~$ cat> file2
+pooja is a good girl
 cse student
-(base) user@nmst-1402:~$ mv file2 file1
-(base) user@nmst-1402:~$ cat file1
-balaji is a good boy
+(base) user@sravanidharavath:~$ mv file2 file1
+(base) user@sravanidharavath:~$ cat file1
+pooja is a good girl
 cse student
-(base) user@nmst-1402:~$ cat file2
+(base) user@sravanidharavath:~$ cat file2
 cat: file2: No such file or directory
-(base) user@nmst-1402:~$ echo "student"
+(base) user@sravanidharavath:~$ echo "student"
 student
-(base) user@nmst-1402:~$ chown file1 file2
+(base) user@sravanidharavath:~$ chown file1 file2
 chown: invalid user: ‘file1’
-(base) user@nmst-1402:~$ chown file file2
+(base) user@sravanidharavath:~$ chown file file2
 chown: invalid user: ‘file’
-(base) user@nmst-1402:~$ cd
-(base) user@nmst-1402:~$ pwd /Home
+(base) user@sravanidharavath:~$ cd
+(base) user@sravanidharavath:~$ pwd /Home
 /home/user
 
 				
 //commands all referenced.... below commands
 
-(base) user@nmst-1402:~$ history
+(base) user@sravanidharavath:~$ history
 
 touch file1 file2
  1961  whoami
@@ -196,9 +196,9 @@ touch file1 file2
  2019  which -a file1
  2020  which -a cat
  2021  man cat
- 2022  su nmst_1402
- 2023  su nmst1402
- 2024  su nmst_1402 nmst-1402
+ 2022  su sravanidharavath
+ 2023  su sravanidharavath
+ 2024  su sravanidharavath sravanidharavath
  2025  sudo ls
  2026  sudo usr
  2027  sudo local
@@ -212,7 +212,7 @@ touch file1 file2
  2035  cal 11 2003
  2036  who
  2037  history
-(base) user@nmst-1402:~$ 
+(base) user@sravanidharavath:~$ 
 
 
 
